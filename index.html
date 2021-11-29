@@ -1,1 +1,71 @@
-<html></html>
+<html>
+<head>
+<title>chris.christensen.tel</title>
+</head>
+  <body onload="loadbgimg()">
+    chris.christensen.tel
+  </body>
+<script type="text/javascript">
+function loadbgimg()
+{
+var bgArray = ['14486759946_eddc943ce7_o.jpeg',
+'1B0CC8C8-3C27-4CCC-8772-14B57FCD6694.jpeg',
+'ADBD9888-8A66-4D7C-BA81-2B7A02DA8C4D.jpeg',
+'DSCN0104.jpeg',
+'IMG010.jpeg',
+'IMG_0243.jpeg',
+'IMG_0697.jpeg',
+'IMG_0700.jpeg',
+'IMG_0757.jpeg',
+'IMG_0949.jpeg',
+'IMG_1024.jpeg',
+'IMG_1415.jpeg',
+'IMG_1426.jpeg',
+'IMG_1435.jpeg',
+'IMG_1436.jpeg',
+'IMG_1447.jpeg',
+'IMG_1541.jpeg',
+'IMG_1818.jpeg',
+'IMG_1935.jpeg',
+'IMG_4146.jpeg',
+'IMG_6181.jpeg',
+'IMG_6187.jpeg',
+'IMG_6199.jpeg',
+'IMG_6209.jpeg',
+'IMG_6230.jpeg',
+'IMG_6450.jpeg',
+'IMG_6661.jpeg',
+'IMG_6905.jpeg',
+'IMG_7268.jpeg',
+'IMG_7279.jpeg',
+'IMG_7338.jpeg',
+'P1020222.jpeg',
+'SC0177.jpeg',
+'SC0860.jpeg',
+'cimg5650jpg_2167124174_o.jpeg',
+'img_0582_5302778648_o.jpeg',
+'img_1172_3805461991_o.jpeg',
+'img_1894_2213797286_o.jpeg',
+'pc110323jpg_484115189_o.jpeg',
+'pc120656jpg_484223377_o.jpeg',
+'pc130719jpg_484244363_o.jpeg'];
+var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
+var styles1 = `
+  * { margin: 0; padding: 0; }
+  html {
+    background: url(bgimages/
+`
+var styles2 = `) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+`
+var styleSheet = document.createElement("style")
+styleSheet.type = "text/css"
+styleSheet.innerText = styles1+bg+styles2
+document.head.appendChild(styleSheet)
+}
+</script>
+</html>
